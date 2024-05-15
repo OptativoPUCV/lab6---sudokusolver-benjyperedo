@@ -52,14 +52,14 @@ int is_valid(Node* n){
                if (n->sudo[i][j] == n->sudo[i][k] && k != j) return 0;
                if (n->sudo[i][j] == n->sudo[k][j] && k != i) return 0;
 
-               int fila = (i / 3 ) * 3;
-               int column = (j % 3) * 3;
+              // int fila = (i / 3 ) * 3;
+               //int column = (j % 3) * 3;
 
-               for (int z = fila; z < fila ; z++){
-                  for (int w = column; w < column ; w++){
-                     if (n->sudo[i][j] == n->sudo[z][w] && z != i && w != j) return 0;
-                  }
-               }
+               //for (int z = fila; z < fila ; z++){
+                  //for (int w = column; w < column ; w++){
+                     //if (n->sudo[i][j] == n->sudo[z][w] && z != i && w != j) return 0;
+                  //}
+               //}
             }
          }
       }
